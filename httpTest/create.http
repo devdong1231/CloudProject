@@ -1,0 +1,18 @@
+### 회원 생성
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "name": "김유하",
+  "age": 23,
+  "mbti": "ISTJ"
+}
+
+### 회원 생성 오류
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+"name": "김유하",
+"age": 23
+}
