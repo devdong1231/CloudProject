@@ -5,3 +5,6 @@ Content-Type: application/json
 ### 존재하지 않는 회원 조회
 GET http://localhost:8080/api/members/999
 Content-Type: application/json
+
+### health 확인
+GET http://localhost:8080/actuator/health
