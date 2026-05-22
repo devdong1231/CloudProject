@@ -1,11 +1,11 @@
 name: Deploy to EC2
 
-# main 브랜치 push 또는 PR
+# master 브랜치 push 또는 PR
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 # OIDC 토큰 요청 권한
 permissions:
