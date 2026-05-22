@@ -25,6 +25,17 @@ public class Member {
     @Column(nullable = false)
     private String mbti;
 
+    @Column(nullable = false)
+    private String profileImgUrl;
+
+    @Column(nullable = false)
+    private String profileImgKey;
+
+    public void updateProfileImg(String profileImgUrl, String profileImgKey) {
+        this.profileImgKey = profileImgKey;
+        this.profileImgUrl = profileImgUrl;
+    }
+
     @Builder
     public Member(String name, int age, String mbti) {
         this.name = name;

@@ -1,4 +1,4 @@
-### 회원 생성
+### 멤버 생성
 POST http://localhost:8080/api/members
 Content-Type: application/json
 
@@ -8,11 +8,31 @@ Content-Type: application/json
   "mbti": "ISTJ"
 }
 
-### 회원 생성 오류
+### 멤버 생성 오류1
 POST http://localhost:8080/api/members
 Content-Type: application/json
 
 {
 "name": "김유하",
 "age": 23
+}
+
+### 멤버 생성 오류2
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "name": "김유하",
+  "age": 23,
+  "mbti": ""
+}
+
+### 멤버 생성 오류3
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "name": "김유하",
+  "age": 23,
+  "mbti": "ISTSDFJ"
 }
