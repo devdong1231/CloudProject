@@ -12,7 +12,7 @@ import software.amazon.awssdk.services.s3.presigner.S3Presigner;
 @Profile("prod")
 public class S3Config {
 
-    @Value("${aws.s3.region}")
+    @Value("${cloud.aws.s3.region}")
     private String region;
 
     @Bean

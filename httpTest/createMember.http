@@ -1,5 +1,7 @@
+@baseUrl = 52.78.204.238
+
 ### 멤버 생성
-POST http://localhost:8080/api/members
+POST http://{{baseUrl}}:8080/api/members
 Content-Type: application/json
 
 {
@@ -9,7 +11,7 @@ Content-Type: application/json
 }
 
 ### 멤버 생성 오류1
-POST http://localhost:8080/api/members
+POST http://{{baseUrl}}:8080/api/members
 Content-Type: application/json
 
 {
@@ -18,7 +20,7 @@ Content-Type: application/json
 }
 
 ### 멤버 생성 오류2
-POST http://localhost:8080/api/members
+POST http://{{baseUrl}}:8080/api/members
 Content-Type: application/json
 
 {

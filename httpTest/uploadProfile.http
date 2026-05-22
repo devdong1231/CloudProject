@@ -1,0 +1,12 @@
+@baseUrl = 52.78.204.238
+
+### 사진 업로드
+POST http://{{baseUrl}}:8080/api/members/1/profile-image
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="image"; filename="profile.png"
+Content-Type: image/png
+
+< ../docs/exampleImage/image1.png
+--boundary--

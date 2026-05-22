@@ -1,6 +1,6 @@
 package com.cloudproject.member;
 
-import com.cloudproject.S3Service;
+import com.cloudproject.common.S3Service;
 import com.cloudproject.common.exception.NotFoundException;
 import com.cloudproject.member.dto.CreateMemberRequest;
 import com.cloudproject.member.dto.CreateMemberResponse;
@@ -53,9 +53,8 @@ public class MemberService {
                 .orElseThrow(() -> new IllegalArgumentException("회원을 찾을 수 없습니다."));
 
         String imageKey = s3Service.uploadProfileImage(id, image);
-        String imageUrl = s3Service.getFileUrl(imageKey);
 
-        member.updateProfileImg(imageUrl, imageKey);
+        member.updateProfileImg(imageKey);
     }
 
     public ProfileImageResponse getProfileImage(Long id) {

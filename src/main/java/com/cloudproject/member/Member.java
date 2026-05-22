@@ -26,14 +26,10 @@ public class Member {
     private String mbti;
 
     @Column(nullable = false)
-    private String profileImgUrl;
-
-    @Column(nullable = false)
     private String profileImgKey;
 
-    public void updateProfileImg(String profileImgUrl, String profileImgKey) {
+    public void updateProfileImg(String profileImgKey) {
         this.profileImgKey = profileImgKey;
-        this.profileImgUrl = profileImgUrl;
     }
 
     @Builder

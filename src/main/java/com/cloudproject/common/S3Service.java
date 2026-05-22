@@ -1,4 +1,4 @@
-package com.cloudproject;
+package com.cloudproject.common;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
