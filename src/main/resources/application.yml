@@ -14,7 +14,8 @@ management:
     env:
       enabled: true
 
-aws:
-  s3:
-    bucket: team-mbti-homework-devdong1231
-    region: ap-northeast-2
+cloud:
+  aws:
+    s3:
+      bucket: team-mbti-homework-devdong1231
+      region: ap-northeast-2

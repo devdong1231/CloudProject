@@ -1,0 +1,4 @@
+@baseUrl = 52.78.204.238
+
+### 프로필 이미지 조회 URL 받기
+GET http://{{baseUrl}}:8080/api/members/1/profile-image
