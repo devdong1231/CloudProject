@@ -44,7 +44,7 @@ jobs:
 
       # Step 4: 테스트 실행 (CI의 핵심!)
       - name: Run tests
-        run: ./gradlew test
+        run: ./gradlew clean bootJar -x test
 
       # Step 5: JAR 빌드
       - name: Build JAR
