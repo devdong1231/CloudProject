@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: Deploy to EC2
 
 # main 브랜치 push 또는 PR
 on:
